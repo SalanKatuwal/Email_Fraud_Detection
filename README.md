@@ -15,12 +15,12 @@ Before running the model, make sure you have the following installed:
     <li>nltk</li>
     </ul>
 
-<h1?>For installation</h1>
-<strong>Clone this repository</strong>
-git clone https://github.com/yourusername/email-spam-detection.git
-<strong>Navigate to the project directory</strong>
-cd email-spam-detection
-<strong>Install the requied dependencies</strong>
-pip install -r requirements.txt
-<strong>To run the email spam detection model, use the following command in the terminal</strong>
+<h1>For installation</h1>
+<strong>Clone this repository</strong><br>
+git clone https://github.com/yourusername/email-spam-detection.git <br>
+<strong>Navigate to the project directory</strong> <br>
+cd email-spam-detection <br>
+<strong>Install the requied dependencies</strong> <br>
+pip install -r requirements.txt <br>
+<strong>To run the email spam detection model, use the following command in the terminal</strong> <br>
 streamlit run app.py
