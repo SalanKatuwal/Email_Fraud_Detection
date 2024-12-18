@@ -1,0 +1,1 @@
+This is the maching learning model for Email Spam Detection where i have used mail_data.csv dataset and i have used MultinomialNB model to train the data set and i have the performance metrics as: Acuuracy_score=97% and precision_score=1.0 which is very good for the classifier like email_fraud_detection
