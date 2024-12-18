@@ -17,10 +17,10 @@ Before running the model, make sure you have the following installed:
 
 <h1>For installation</h1>
 <strong>Clone this repository</strong><br>
-git clone https://github.com/yourusername/email-spam-detection.git <br>
+    git clone https://github.com/yourusername/email-spam-detection.git <br> <br>
 <strong>Navigate to the project directory</strong> <br>
-cd email-spam-detection <br>
+    cd email-spam-detection <br> <br>
 <strong>Install the requied dependencies</strong> <br>
-pip install -r requirements.txt <br>
+    pip install -r requirements.txt <br> <br>
 <strong>To run the email spam detection model, use the following command in the terminal</strong> <br>
-streamlit run app.py
+    streamlit run app.py
