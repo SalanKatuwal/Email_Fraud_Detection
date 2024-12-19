@@ -9,6 +9,7 @@ ps=PorterStemmer()
 tfidf=pickle.load(open('Vectorizer.pkl','rb'))
 model=pickle.load(open('model.pkl','rb'))
 
+nltk.download('punkt')
 def transform_text(text):
     
     # convert the text into lower case
