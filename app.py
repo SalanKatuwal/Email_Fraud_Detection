@@ -9,14 +9,15 @@ ps=PorterStemmer()
 tfidf=pickle.load(open('Vectorizer.pkl','rb'))
 model=pickle.load(open('model.pkl','rb'))
 
-nltk.download('punkt')
+
+nltk.download('stopwords')
 def transform_text(text):
     
     # convert the text into lower case
     text=text.lower()
     
     # separate the words and make the list
-    text=nltk.word_tokenize(text)
+    words = text.split()
     
     # remove the special character
     y=[]
