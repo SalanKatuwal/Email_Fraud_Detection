@@ -6,6 +6,7 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
 nltk.download('punkt')
+from nltk.tokenize import word_tokenize
 
 tfidf=pickle.load(open('Vectorizer.pkl','rb'))
 model=pickle.load(open('mnb.pkl','rb'))
