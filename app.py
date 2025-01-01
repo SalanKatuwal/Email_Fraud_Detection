@@ -7,7 +7,7 @@ from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
 
 tfidf=pickle.load(open('Vectorizer.pkl','rb'))
-model=pickle.load(open('model.pkl','rb'))
+model=pickle.load(open('mnb.pkl','rb'))
 
 
 nltk.download('stopwords')
@@ -17,7 +17,7 @@ def transform_text(text):
     text=text.lower()
     
     # separate the words and make the list
-    words = text.split()
+    text=nltk.word_tokenize(text)
     
     # remove the special character
     y=[]
@@ -51,7 +51,7 @@ if st.button("Predict"):
     transformed_sms=transform_text(input_sms)
 
     #vectorize
-    vector_sms=tfidf.transform([transformed_sms])
+    vector_sms=tfidf.transform([transformed_sms]).toarray()
 
     # predict
     result=model.predict(vector_sms)
