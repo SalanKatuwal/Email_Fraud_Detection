@@ -5,6 +5,7 @@ import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
+nltk.download('punkt')
 
 tfidf=pickle.load(open('Vectorizer.pkl','rb'))
 model=pickle.load(open('mnb.pkl','rb'))
@@ -52,6 +53,7 @@ if st.button("Predict"):
 
     #vectorize
     vector_sms=tfidf.transform([transformed_sms]).toarray()
+
 
     # predict
     result=model.predict(vector_sms)
